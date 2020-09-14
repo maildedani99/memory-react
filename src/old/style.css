@@ -1,11 +1,20 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
 
+.clickStyle {
+  transform: rotateY(180deg);
+  transform-style: preserve-3d;
+  transition: all 0.3s linear;
 
+}
+.unClickStyle{
+  transform-style: preserve-3d;
+  transition: all 0.3s linear;
+
+}
 
 .seccion {
   background-color: #2F426F;
-  background-image: url("img/fondoazul.jpg");
 }
 
 .cara {

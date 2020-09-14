@@ -1,0 +1,63 @@
+*body {
+  font-size: 3rem;
+  width: 100vw;
+  height: 100vh;  
+}
+
+.__turn_card {
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+    transition: all 0.3s linear;
+}
+
+.__turnoff_card {
+  transform-style: preserve-3d;
+  transition: all 0.3s linear;
+}
+
+.__carta_box{
+  min-height: 12.5em;
+}
+
+.__card{
+    padding: 1rem;
+}
+
+.__carta_box {
+    margin: auto;
+    width: 9.4em;
+    position: relative;
+    perspective: 1000px;
+  }
+  img{
+      border-radius: 10px;
+  }
+  .__carta {
+    transform-style: preserve-3d;
+    transition: all 0.5s linear;
+    border-radius: 0.9em;
+  }
+  .__cara {
+    position: absolute;
+    backface-visibility: hidden;
+   
+    border-radius: 0.9em;
+    
+  }
+  .__cara.detras {
+    transform: rotateY(180deg);
+  }
+  .__seccion0 {
+    width: 100vw;
+    height: 100vh;
+  }
+  .__seccion {
+    padding: 2rem 5rem;
+    
+  }
+  .__seccion2 {
+    max-height: 100vh;
+    padding: 2rem ;
+    
+  }
+
