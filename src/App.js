@@ -1,14 +1,14 @@
 import React from 'react';
 import './App.css';
-import MainView from './pages/main.view/main.view';
+import Card from './components/ActionCard/card';
+
+
 
 function App() {
-  
-  
 
 
   return (
-      <MainView />
+     <Card />
   );
 }
 

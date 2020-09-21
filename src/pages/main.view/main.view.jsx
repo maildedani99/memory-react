@@ -1,21 +1,18 @@
-import React, { useEffect }  from 'react';
+import React, { useEffect } from 'react';
 import styles from './mainview.module.css';
-import Card from '../../components/card/card';
-import CardAction from '../../components/card/cardaction/cardaction';
-import CardMap from '../../utils/cardmap';
+import CardMap from '../../components/card/cardmap';
+import '../../old/style.css';
+import { CardProvider } from '../../components/card/cardcontext';
 
 const MainView = () => {
 
-    
-    useEffect(() => {
-    }, [])
-
 
     return (
-            <div className={styles.__main_container}>
-                
+        <div className={styles.__main_container}>
+            <CardProvider>
                 <CardMap />
-            </div>
+            </CardProvider>
+        </div>
     )
 }
 

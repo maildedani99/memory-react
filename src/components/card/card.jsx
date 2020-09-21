@@ -1,36 +1,31 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import styles from '../../pages/main.view/mainview.module.css';
 import inter from '../../img/inter.png';
 import '../../pages/main.view/mainview.module.css';
-import tigre from '../../img/tigre.jpg';
+import '../../old/style.css';
+import { CardContext } from './cardcontext';
 
 
 
-const Card = () => {
+const Card = (props) => {
 
-    //const [cartaSel, setCartaSel] = useState();
-    //const [turnOffStyle, setTurnOffStyle] = useState();
-    const [turnStyle, setTurnStyle] = useState("style.__turnoff_card");
-//    const [isHovered, setIsHovered] = useState(false);
+    const {item} = props;
 
-
+    const { animalArray, clickStyle, handleClick } = useContext(CardContext);
 
     return (
         <>
 
-            <div className={styles.__carta_box}
-                onMouseDown={() => setTurnStyle("style.__turn_card")}
-                onMouseUp={() => setTurnStyle("style.__turnoff_card")}
-            >
-                
-                    <div id="carta1" className={turnStyle} >
-                        <div className={styles.__cara}>
-                            <img src={inter} class="img-fluid" alt="foto" />
-                        </div>
-                        <div className={`$(styles.__detras) $(styles.__cara)` }>
-                            <img src={tigre} id="1" alt="foto" className={styles.__img1} />
-                        </div>
+            <div class="carta-box col-2">
+                <div id={item} class={clickStyle} onClick={handleClick}>
+                    <div class="cara">
+                        <p>{animalArray[{item}]}</p>
+                        <img src={animalArray[{item}]} class="img-fluid" />
                     </div>
+                    <div class="cara detras">
+                        <img src={animalArray[{item}]}  class="img1 img-fluid" />
+                    </div>
+                </div>
             </div>
         </>
     )

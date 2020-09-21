@@ -51,6 +51,7 @@
         width: 9.4em;
         min-height: 3em;
         position: relative;
+        margin: 1rem 3rem;
         perspective: 1000px;
       }
     img{
