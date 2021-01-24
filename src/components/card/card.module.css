@@ -1,0 +1,72 @@
+*body {
+    font-size: 3rem;
+    width: 100vw;
+    height: 100vh;  
+  }
+  .p1 {
+    font-size: 2.6rem;
+    text-align: center;
+}
+.p2 {
+    font-size: 1.4rem;
+    text-align: center;
+}
+.p3 {
+  font-size: 1.2rem;
+  text-align: center;
+}
+  .carta-box{
+    min-height: 12.5em;
+  }
+  *{
+    font-family: 'Source Code Pro', monospace;
+  }
+  .card{
+      padding: 1rem;
+  }
+  
+  .carta-box {
+      margin: auto;
+      width: 9.4em;
+      position: relative;
+      perspective: 1000px;
+    }
+    img{
+        border-radius: 10px;
+    }
+    .carta {
+      transform-style: preserve-3d;
+      transition: all 0.5s linear;
+      border-radius: 0.9em;
+    }
+    .carta_girada {
+
+        transform: rotateY(180deg);
+        transform-style: preserve-3d;
+        transition: all 0.3s linear;
+    }
+    .cara {
+      position: absolute;
+      backface-visibility: hidden;
+     
+      border-radius: 0.9em;
+      
+    }
+    .cara.detras {
+      
+      transform: rotateY(180deg);
+    }
+    .seccion0 {
+      width: 100vw;
+      height: 100vh;
+    }
+    .seccion {
+      padding: 2rem 5rem;
+      
+    }
+    .seccion2 {
+      max-height: 100vh;
+      padding: 2rem ;
+      
+    }
+
